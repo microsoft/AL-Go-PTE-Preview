@@ -12,11 +12,6 @@ Param(
 $ErrorActionPreference = "stop"
 Set-StrictMode -Version 2.0
 
-
-
-
-
-
 try {
 $webClient = New-Object System.Net.WebClient
 $webClient.CachePolicy = New-Object System.Net.Cache.RequestCachePolicy -argumentList ([System.Net.Cache.RequestCacheLevel]::NoCacheNoStore)
